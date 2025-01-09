@@ -83,7 +83,9 @@ function populateTable(rows = []) {
 // Fetch data from backend
 async function fetchAndPopulateTable() {
   try {
-    const response = await axios.get("http://localhost:3000/api/data");
+    const response = await axios.get(
+      "https://vehicle-tracking-3.onrender.com/api/data"
+    );
     sheetName = response.data.sheetName; // Store the sheet name
     allRows = response.data.rows; // Store all rows for filtering
     populateTable(allRows); // Populate the table with all rows initially
