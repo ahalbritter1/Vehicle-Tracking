@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: vehicle-transport-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node vehicle-transport-tracker/backend/server.js
+    envVars:
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: backend/keys/vehicle-transport-tracker-93a1d1ff9587.json
+      - key: SPREADSHEET_ID
+        value: 1k9_7E3ZKrK-a-cxtlrnGkX100o0NLrw9MFU0zHjbAzs
