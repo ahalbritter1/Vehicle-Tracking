@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Transport Tracker</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Experience Wholesale - Left Lane Exotics</h1>
+      <!-- Search Input -->
+
+      <div
+        id="vehicle-count"
+        style="margin-bottom: 20px; font-size: 18px; font-weight: bold"
+      >
+        Vehicles: 0
+      </div>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by VIN"
+        style="margin-bottom: 20px; padding: 10px; width: 100%"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th>VIN#</th>
+            <th>Year</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Pickup Location</th>
+            <th>Delivery Location</th>
+            <th>Pickup Estimate</th>
+            <th>Delivery Estimate</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="vehicle-table-body">
+          <!-- Data will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+</html>
